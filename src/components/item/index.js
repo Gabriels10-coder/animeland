@@ -1,0 +1,72 @@
+import React from 'react';
+import {
+  Card,
+  CardActionArea,
+  CardMedia,
+  makeStyles,
+  Typography,
+  
+} from '@material-ui/core';
+const useStyles = makeStyles({
+  container: {
+    
+
+    padding: '20px',
+    
+  },
+  card: {
+    padding: '10px',
+    marginRight: '10px', 
+    justifyContent:'center',
+    alignItems:'center',
+    backgroundColor:'#9e9e9e',
+  },
+  text:{
+    fontWeight:'bold',
+  },
+  imagem: {
+  
+    width: '125px',
+    height: '200px',
+    border: '1px solid black',
+  },
+  espaceSub: {
+    marginTop: '10px',
+  },
+  action:{
+    justifyContent:'center',
+    display:'flex',
+  }
+})
+const Item = (props) => {
+  const classes = useStyles();
+  return (
+    <div className={classes.container}>
+      
+      <Card className={classes.card} variant='outlined'>
+        <CardActionArea className={classes.action} >
+          <CardMedia className={classes.imagem}
+            image={props.img}
+            title={props.title}
+          />
+        </CardActionArea>
+        <div className={classes.espaceSub}>
+          <Typography 
+          className={classes.text} 
+          variant="subtitle1" 
+          align='left'>
+            {props.subtitle1}
+            </Typography>
+          <Typography  
+          variant='subtitle2' 
+          align='left'
+          color='textSecondary'>
+           {props.subtitle2}
+            </Typography>
+        </div>
+      </Card>
+      
+    </div>
+  )
+}
+export default Item;
