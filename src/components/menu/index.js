@@ -52,7 +52,7 @@ const Menu = () => {
             },
                 
             },
-        anima: {
+        animal: {
           widht:100,
           
         }
@@ -97,7 +97,7 @@ const Menu = () => {
                     <motion.div 
                     variants={input}
                     initial='initial'
-                    animate='anima'
+                    animate='animal'
                     
                   
                      
