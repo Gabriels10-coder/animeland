@@ -3,6 +3,7 @@ import {
   createMuiTheme,
   ThemeProvider } from '@material-ui/core';
 import React from 'react';
+import {AnimateSharedLayout} from 'framer-motion';
 import Rotas from './components/rota/'
 
 
@@ -24,8 +25,11 @@ function App() {
   return (
     <div >
       <ThemeProvider theme = {theme}>
-      <Rotas/>
+        <AnimateSharedLayout>
+      <Rotas/> 
+      </AnimateSharedLayout>
        </ThemeProvider>
+      
     </div>
   );
 }

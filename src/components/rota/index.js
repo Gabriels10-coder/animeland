@@ -1,8 +1,7 @@
 import React from 'react';
 import {BrowserRouter,Switch,Route} from 'react-router-dom';
-import Lista from '../lista/';
-
-
+import Lista from '../paginaLista/';
+import Login from '../login/'
 
 function Rotas (){
 
@@ -10,6 +9,7 @@ function Rotas (){
         <BrowserRouter>
         <Switch>
             <Route exact path ='/' component ={Lista}/>
+            <Route  path ='/Login' component ={Login}/>
         </Switch>
         </BrowserRouter>
     )
