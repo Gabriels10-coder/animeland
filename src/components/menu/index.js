@@ -52,7 +52,7 @@ const Menu = () => {
             },
                 
             },
-        animal: {
+        anima: {
           widht:100,
           
         }
